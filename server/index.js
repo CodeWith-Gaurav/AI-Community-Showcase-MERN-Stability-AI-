@@ -9,7 +9,17 @@ import dalleRoutes from './routes/dalleRoutes.js'
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+  'http://localhost:5173', // Keep for local development
+  'https://ai-community-showcase-mern-stabilit.vercel.app', // Your Vercel frontend URL
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
 app.use(express.json({ limit: "50mb" }));
 
 app.use('/api/v1/post', postRoutes);
