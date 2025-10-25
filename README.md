@@ -1,4 +1,4 @@
-# 🧠 AI Community Showcase (MERN Stack + Stability AI)
+# ImaginAi - Community Showcase
 
 ## 📘 Project Overview
 The **AI Community Showcase** is a full-stack web application that allows users to generate unique images from text prompts using the **Stability AI (Stable Diffusion)** model and share them with a public community feed.  
